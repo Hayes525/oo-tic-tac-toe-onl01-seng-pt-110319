@@ -21,7 +21,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   def input_to_index
-    turn_count % 2 == 0 ? "X" : "O"
+    move % 2 == 0 ? "X" : "O"
   end
   def move
     @board.count{|token| token == "X" || token == "O"}
